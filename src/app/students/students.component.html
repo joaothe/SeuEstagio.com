@@ -1,0 +1,7 @@
+<h2 class="page-header"> Lista Alunos</h2>
+
+<div class="row">
+  <div *ngFor="let std of listStudent" class="col-md-4">
+    <mt-student [student]="std"></mt-student>
+  </div>
+</div>

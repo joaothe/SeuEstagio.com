@@ -1,0 +1,33 @@
+<a [routerLink]="['/students', student.id]">
+  <!-- Widget: user widget style 1 -->
+  <div class="box box-widget widget-user">
+    <!-- Add the bg color to the header using any of the bg-* classes -->
+    <div class="widget-user-header bg-mediumseagreen">
+      <h3 class="widget-user-username usercolor">{{student.name}}</h3>
+      <h5 class="widget-user-desc usercolor">{{student.job}}</h5>
+    </div>
+    <div class="box-footer">
+      <div class="row">
+        <div class="col-sm-4 border-right">
+          <div class="description-block">
+            <h5 class="description-header">{{student.period}}</h5>
+            <span class="description-text">Período</span>
+          </div>
+          <!-- /.description-block -->
+        </div>
+        <!-- /.col -->
+        <!-- /.col -->
+        <div class="col-sm-4">
+          <div class="description-block curso">
+            <h5 class="description-header">Curso</h5>
+            <span class="description-text ">{{student.course}}</span>
+          </div>
+          <!-- /.description-block -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+  </div>
+  <!-- /.widget-user -->
+</a>

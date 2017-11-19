@@ -1,0 +1,14 @@
+.curso{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.bg-mediumseagreen{
+  background-color: #3cb371;
+}
+
+.usercolor{
+  color: #FFFFFF;
+  text-align: center;
+}

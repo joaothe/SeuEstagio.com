@@ -1,0 +1,14 @@
+.boxImagem{
+  width: 80px;
+  border: 4px solid #dd4b39;
+  border-radius: 10px;
+}
+
+.home-internship p{
+  font-size: 25px;
+}
+
+.btn-green{
+  background-color: #3cb371;
+  color: #FFFFFF;
+}
