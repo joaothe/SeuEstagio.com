@@ -18,6 +18,7 @@ import { JobsListComponent } from './jobs-list/jobs-list.component';
 import { JobComponent } from './jobs-list/job/job.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { PostjobComponent } from './postjob/postjob.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { RegisterComponent } from './register/register.component';
     JobsListComponent,
     JobComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PostjobComponent
   ],
   imports: [
     BrowserModule,

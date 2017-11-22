@@ -4,3 +4,7 @@
     border-top: 0;
     color: #ffff;
 }
+
+.login-logo a, .register-logo a {
+    color: #ffeaea;
+}
