@@ -19,7 +19,9 @@ import { JobComponent } from './jobs-list/job/job.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PostjobComponent } from './postjob/postjob.component';
-
+import { JobsService } from './jobs-list/jobs.service';
+import { JobDetailComponent } from './job-detail/job-detail.component';
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [
@@ -34,14 +36,16 @@ import { PostjobComponent } from './postjob/postjob.component';
     JobComponent,
     LoginComponent,
     RegisterComponent,
-    PostjobComponent
+    PostjobComponent,
+    JobDetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [StudentsService],
+  providers: [StudentsService, JobsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

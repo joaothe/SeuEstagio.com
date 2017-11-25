@@ -9,28 +9,28 @@
     <h1>Bem vindo ao SeuEstágio.com</h1>
     <div class="row">
                 <div class="col-md-4">
-                  <input type="text" class="form-control" style="border-radius:5px;" placeholder="Empresa / Palavras-chave">
+                  <input id="input1" type="text" class="form-control" style="border-radius:5px;" placeholder="Empresa / Palavras-chave">
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" style="border-radius:5px;" placeholder="Cidade / Bairro">
+                  <input id="input2" type="text" class="form-control" style="border-radius:5px;" placeholder="Cidade / Bairro">
                 </div>
                 <div class="col-md-3 ">
-                    <div class="form-group">
+                    <div class="form-group" id="select">
 
                       <select class="form-control" style="border-radius:5px;">
                         <option>Todas as Categorias</option>
                             <option>Finanças</option>
-                            <option>TI & Engenharia</option>
+                            <option>TI</option>
                             <option>Educação/Treinamento</option>
                             <option>Art/Design</option>
                             <option>Vendas/Markting</option>
                             <option>Saúde</option>
-                            <option>Ciências</option>                              
+                            <option>Ciências</option>
                       </select>
                    </div>
                 </div>
                 <div class="col-md-1" >
-                    <a class="btn btn-green " [routerLink]="['/students']">Pesquisar</a>
+                    <a class="btn btn-green">Pesquisar</a>
                 </div>
       </div>
 
@@ -41,4 +41,32 @@
 <br>
 <h1 style="color:white">Últimos Estágios</h1>
 <br>
-<mt-jobs-list></mt-jobs-list>
+<div class="" id="lista">
+  <mt-jobs-list></mt-jobs-list>
+</div>
+
+<section class="">
+  <h2 style="color:white">Parceiros</h2 >
+  <div class="row">
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img1.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img2.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img3.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img4.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img5.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img6.png" alt="">
+    </div>
+
+  </div>
+</section>
+<br>

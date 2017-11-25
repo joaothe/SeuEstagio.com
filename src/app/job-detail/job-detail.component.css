@@ -1,0 +1,13 @@
+.box {
+    padding: 10px;
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+.btn-green{
+  background-color: #3cb371;
+  color: #FFFFFF;
+}

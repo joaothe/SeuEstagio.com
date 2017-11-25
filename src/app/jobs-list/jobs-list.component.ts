@@ -1,57 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import {Estagio} from './job/job.model'
+import {JobsService} from './jobs.service'
+
 @Component({
   selector: 'mt-jobs-list',
   templateUrl: './jobs-list.component.html',
   styleUrls: ['./jobs-list.component.css']
 })
 export class JobsListComponent implements OnInit {
-  listaJobs: Estagio[] = [
-    {
-      id:1,
-      empresa:"Teste",
-      descricao:`sdfsfsfsffsfsadfsdffffffffffffffff
-      fffffffffffffffffffffffffffffffffffffff`,
-      data:"",
-      title:"Estágio TI",
-      capa:"../../../assets/img/students/empresa1.jpg",
-      categoria:"TI"
-    },
+  listaJobs: Estagio[] = [];
 
-    {
-      id:2,
-      empresa:"Teste",
-      descricao:"sdfsfsfsffsfsadf",
-      data:"",
-      title:"Estágio TI",
-      capa:"../../../assets/img/students/empresa1.jpg",
-      categoria:"TI"
-    },
 
-    {
-      id:3,
-      empresa:"Teste",
-      descricao:"sdfsfsfsffsfsadf",
-      data:"",
-      title:"Estágio TI",
-      capa:"../../../assets/img/students/empresa1.jpg",
-      categoria:"TI"
-    },
-
-    {
-      id:4,
-      empresa:"Teste",
-      descricao:"sdfsfsfsffsfsadf",
-      data:"",
-      title:"Estágio TI",
-      capa:"../../../assets/img/students/empresa1.jpg",
-      categoria:"TI"
-    }
-
-  ]
-  constructor() { }
+  constructor(private jobsService: JobsService) { }
 
   ngOnInit() {
+    this.jobsService.getEstagios().subscribe(jobs => this.listaJobs = jobs);;
   }
 
 }

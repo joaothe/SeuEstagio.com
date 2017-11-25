@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {JobsListComponent} from '../jobs-list/jobs-list.component'
+import {Estagio} from '../jobs-list/job/job.model'
 @Component({
   selector: 'mt-home',
   templateUrl: './home.component.html',
@@ -7,20 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  meuNome:string = "Vinícius Tolentino"
-  pathCafeDaManha:string = "../../assets/img/foods/donut.png"
-  pathAlmoco:string = "../../assets/img/foods/zlasagna.png"
-  show:boolean = true
+
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  cafeDaManha(nome){
-    this.pathCafeDaManha = `../../assets/img/foods/${nome}.png`
-  }
-
 
 
 }

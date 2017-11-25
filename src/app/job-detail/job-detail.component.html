@@ -1,0 +1,75 @@
+<section class="job-detail section" >
+<div class="container">
+<div class="row">
+<div class="col-md-9 col-sm-8">
+<div class="content-area">
+
+
+<h2 class="medium-title" style="color:white">Informações do Estágio</h2>
+<div class="box">
+<div class="text-left">
+<h3><a href="#">{{job?.title}}</a></h3>
+
+<div class="meta">
+
+
+</div>
+<strong class="price"><i class="fa fa-money"></i> {{job?.salario}}</strong>
+
+
+</div>
+<div class="clearfix">
+
+<h4>Descrição</h4>
+<p>{{job?.descricao}}</p>
+
+
+<h4>Qualificações</h4>
+<p>{{job?.qualification}}</p>
+<ul>
+<li><i class="ti-check-box"></i>Demonstrated strong and effective verbal, written, and interpersonal communication skills</li>
+<li><i class="ti-check-box"></i>Must be team-oriented, possess a positive attitude and work well with others</li>
+<li><i class="ti-check-box"></i>Ability to prioritize and multi-task in a flexible, fast paced and challenging environment</li>
+</ul>
+
+
+
+<h4>Requerimentos</h4>
+<p>
+  {{job?.requerimentos}}
+</p>
+
+
+<a href="#" class="btn btn-green">Candidatar-se para esse Estágio</a>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-4">
+<aside>
+<div class="sidebar">
+<h2 class="medium-title" style="color:white">Empresa</h2>
+<div class="box">
+<div class="thumb">
+<a href="#"><img src="../../{{job?.capa}}" alt="img" class="img-responsive"></a>
+</div>
+<div class="text-box">
+<h4><a href="#">{{job?.empresa}}</a></h4>
+<p>
+  {{job?.descricaoEmpresa}}
+</p>
+
+<strong>Localização</strong>
+<p>{{job?.location}}</p>
+</div>
+</div>
+
+
+
+</div>
+</aside>
+</div>
+</div>
+</div>
+</section>
