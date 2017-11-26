@@ -1,14 +1,87 @@
 
-<section class="content-header">
+
+
+<section class="content-header ">
 </section>
 
-<section class="content">
+<section class="content ajuste3">
   <div class="jumbotron welcome-jumbotron home-internship">
     <h1>Bem vindo ao SeuEstágio.com</h1>
-    <p>
-      Você que é estudante encontrará as melhores vagas de estágio na sua área. Você que é uma empresa,
-      divulgue suas vagas de estágio no portal e econtre os estudantes certos para contratarem.
-    </p>
-    <a class="btn btn-green btn-lg" [routerLink]="['/students']">Ver lista de Estudantes</a>
+    <div class="row">
+                <div class="col-md-4">
+                  <input id="input1" type="text" class="form-control" style="border-radius:5px;" placeholder="Empresa / Palavras-chave">
+                </div>
+                <div class="col-md-4">
+                  <input id="input2" type="text" class="form-control" style="border-radius:5px;" placeholder="Cidade / Bairro">
+                </div>
+                <div class="col-md-3 ">
+                    <div class="form-group" >
+
+                      <select class="form-control" style="border-radius:5px;" id="select">
+                        <option>Todas as Categorias</option>
+                            <option>Administração</option>
+                            <option>TI</option>
+                            <option>Educação/Treinamento</option>
+                            <option>Art/Design</option>
+                            <option>Vendas/Markting</option>
+                            <option>Saúde</option>
+                            <option>Ciências</option>
+                      </select>
+                   </div>
+                </div>
+                <div class="col-md-1" >
+                    <a class="btn btn-green" (click)="pesquisa()">Pesquisar</a>
+                </div>
+      </div>
+
   </div>
 </section>
+
+
+<br>
+<h1 style="color:white">Últimos Estágios</h1>
+<br>
+<div class="" id="lista">
+  <div *ngIf="valida; else elseBlock">
+    <section class="conteiner">
+    <div class="row ">
+          <div *ngFor="let job of listaResposta">
+            <mt-job [job] = 'job'></mt-job>
+          </div>
+      </div>
+      <br>
+    </section>
+  </div>
+  <ng-template #elseBlock>
+    <div>
+      <mt-jobs-list></mt-jobs-list>
+    </div>
+  </ng-template>
+
+</div>
+
+<section class="">
+  <h2 style="color:white">Parceiros</h2 >
+  <div class="row">
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img1.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img2.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img3.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img4.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img5.png" alt="">
+    </div>
+    <div class="col-md-2">
+      <img class="img-responsive" src="../../assets/img/clients/img6.png" alt="">
+    </div>
+
+  </div>
+</section>
+<br>

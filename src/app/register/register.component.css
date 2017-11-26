@@ -1,0 +1,10 @@
+.login-box-body, .register-box-body {
+    background: #0a080869;
+    padding: 20px;
+    border-top: 0;
+    color: #ffff;
+}
+
+.login-logo a, .register-logo a {
+    color: #ffeaea;
+}

@@ -12,3 +12,22 @@
   background-color: #3cb371;
   color: #FFFFFF;
 }
+
+.ajuste{
+  border-radius: 5px;
+}
+
+
+.ajuste3{
+  padding: 0px;
+}
+
+.jumbotron {
+    background-color: #0a080869;
+    text-align: center;
+    color: white;
+}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}

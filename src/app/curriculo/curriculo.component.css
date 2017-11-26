@@ -1,0 +1,17 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+.inner-box {
+    border: 1px solid #eee;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.job-alerts-item {
+    border: 1px solid #eee;
+    padding: 30px;
+}
