@@ -9,6 +9,8 @@ import {JobsListComponent} from './jobs-list/jobs-list.component'
 import {PostjobComponent} from './postjob/postjob.component'
 import {JobDetailComponent} from './job-detail/job-detail.component'
 import {AboutComponent} from './about/about.component'
+import {CurriculoComponent} from './curriculo/curriculo.component'
+import {ManagejobsComponent} from './managejobs/managejobs.component'
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -19,5 +21,7 @@ export const ROUTES: Routes = [
   {path: 'joblist', component: JobsListComponent},
   {path: 'postjob', component: PostjobComponent},
   {path: 'jobs/:id', component: JobDetailComponent},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+  {path: 'curriculo', component: CurriculoComponent},
+  {path: 'managejobs', component: ManagejobsComponent}
 ]

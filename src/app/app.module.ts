@@ -21,7 +21,9 @@ import { RegisterComponent } from './register/register.component';
 import { PostjobComponent } from './postjob/postjob.component';
 import { JobsService } from './jobs-list/jobs.service';
 import { JobDetailComponent } from './job-detail/job-detail.component';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { CurriculoComponent } from './curriculo/curriculo.component';
+import { ManagejobsComponent } from './managejobs/managejobs.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AboutComponent } from './about/about.component'
     RegisterComponent,
     PostjobComponent,
     JobDetailComponent,
-    AboutComponent
+    AboutComponent,
+    CurriculoComponent,
+    ManagejobsComponent
   ],
   imports: [
     BrowserModule,
