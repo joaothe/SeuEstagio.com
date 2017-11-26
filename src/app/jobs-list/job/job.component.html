@@ -1,24 +1,21 @@
-
-<a [routerLink] = "['/jobs',job.id]">
-  <div class="col-md-6" id="{{job.id}}">
-    <div class="card"  style="background-color:#0a080869; color:white">
-      <div class="row" style="padding:5px" >
-        <div class="col-md-6">
-          <div class="card-img-bottom" [style.background-image]="'url(' + job.capa + ')'">
-          </div>
+<div class="col-md-6" id="{{job.id}}">
+  <div class="card"  style="background-color:#0a080869; color:white">
+    <div class="row" style="padding:5px" >
+      <div class="col-md-6">
+        <div class="card-img-bottom" [style.background-image]="'url(' + job.capa + ')'">
         </div>
-        <div class="col-md-6">
-          <div class="card-block">
-            <h4 class="card-title">{{job.empresa}} - {{job.title}}</h4>
-            <p class="card-text">{{job.descricao}}</p>
-            <a href="#" class="btn btn-green ">Leia mais</a>
-          </div>
-          <br>
+      </div>
+      <div class="col-md-6">
+        <div class="card-block">
+          <h4 class="card-title">{{job.empresa}} - {{job.title}}</h4>
+          <p class="card-text">{{job.descricao}}</p>
+          <a href="#" class="btn btn-green " [routerLink] = "['/jobs',job.id]">Leia mais</a>
         </div>
-
+        <br>
       </div>
 
     </div>
-    <br>
+
   </div>
-</a>
+  <br>
+</div>

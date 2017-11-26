@@ -15,11 +15,11 @@
                   <input id="input2" type="text" class="form-control" style="border-radius:5px;" placeholder="Cidade / Bairro">
                 </div>
                 <div class="col-md-3 ">
-                    <div class="form-group" id="select">
+                    <div class="form-group" >
 
-                      <select class="form-control" style="border-radius:5px;">
+                      <select class="form-control" style="border-radius:5px;" id="select">
                         <option>Todas as Categorias</option>
-                            <option>Finanças</option>
+                            <option>Administração</option>
                             <option>TI</option>
                             <option>Educação/Treinamento</option>
                             <option>Art/Design</option>
@@ -30,7 +30,7 @@
                    </div>
                 </div>
                 <div class="col-md-1" >
-                    <a class="btn btn-green">Pesquisar</a>
+                    <a class="btn btn-green" (click)="pesquisa()">Pesquisar</a>
                 </div>
       </div>
 
@@ -42,7 +42,22 @@
 <h1 style="color:white">Últimos Estágios</h1>
 <br>
 <div class="" id="lista">
-  <mt-jobs-list></mt-jobs-list>
+  <div *ngIf="valida; else elseBlock">
+    <section class="conteiner">
+    <div class="row ">
+          <div *ngFor="let job of listaResposta">
+            <mt-job [job] = 'job'></mt-job>
+          </div>
+      </div>
+      <br>
+    </section>
+  </div>
+  <ng-template #elseBlock>
+    <div>
+      <mt-jobs-list></mt-jobs-list>
+    </div>
+  </ng-template>
+
 </div>
 
 <section class="">
