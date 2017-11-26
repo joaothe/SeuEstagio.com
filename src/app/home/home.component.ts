@@ -29,6 +29,8 @@ valida:boolean = false;
     for(let obj of this.lista){
       if((obj.empresa == input1 || obj.location === input2) && obj.categoria == select){
         this.listaResposta.push(obj);
+      }else if((obj.empresa == input1 || obj.location === input2) && select == "Todas as Categorias"){
+          this.listaResposta.push(obj);
       }
     }
 
